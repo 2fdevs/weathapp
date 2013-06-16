@@ -1,0 +1,16 @@
+<div id="main-content" ng-model="weatherData">
+	<div id="loading"></div>
+    <div id="location-bar">
+        <p>{{addressData}}</p>
+        <a id="settings-btn" ng-click="onClickSettings()" class="climacon compass icon-topbar"></a>
+    </div>
+	<div id="home">
+		<div id="weather-info">
+			<p id="temperature">{{weatherData.currently.temperature}}º</p>
+			<p id="weather-icon" class="climacon {{weatherData.currently.icon}}"></p>
+			<p id="short-description">{{weatherData.currently.summary}}</p>
+			<img id="weather-bg" ng-src="img/app-bg/{{weatherData.currently.icon}}.png" />
+		</div>
+		<div id="map-info"></div>
+	</div>
+</div>

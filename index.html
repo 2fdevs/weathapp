@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org">
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Home</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="js/lib/leaflet/leaflet.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="js/lib/leaflet/leaflet.ie.css" /><![endif]-->
+	<link rel="stylesheet" href="css/climacons-font.css">
+	<link rel="stylesheet" href="css/demostyle.css">
+</head>
+<body>
+    <ng-view></ng-view>
+
+    <!-- Dependencies -->
+    <script src="js/lib/jquery/jquery.min.js"></script>
+	<script src="js/lib/angular/angular.js"></script>
+    <script src="js/lib/angular/angular-resource.js"></script>
+	<script src="js/lib/leaflet/leaflet.js"></script>
+	<script src="js/lib/gsap/TweenLite.min.js" charset="utf-8"></script>
+	<script src="js/lib/gsap/plugins/CSSPlugin.min.js" charset="utf-8"></script>
+
+    <!-- Utils -->
+    <script src="js/Utils.js" charset="utf-8"></script>
+    <script src="js/MapManager.js" charset="utf-8"></script>
+
+    <!-- App -->
+    <script src="js/WeathApp.js"></script>
+	
+    <!-- Controllers -->
+    <script src="js/controllers/HomeController.js"></script>
+    <script src="js/controllers/SettingsController.js"></script>
+
+    <!-- PhoneGap -->
+    <!-- <script src="phonegap.js"></script> -->
+    <script>
+		/*
+		function onLoad() {
+			// BlackBerry OS 4 browser does not support events.
+			// So, manually wait until PhoneGap is available.
+			var intervalID = window.setInterval(
+			  function() {
+				  if (PhoneGap.available) {
+					  window.clearInterval(intervalID);
+					  onDeviceReady();
+				  }
+			  },
+			  500
+			);
+		}
+		
+		var pgApp = {
+			initialize: function() {
+				this.bindEvents();
+			},
+			bindEvents: function() {
+				document.addEventListener('deviceready', this.onDeviceReady, true);
+			},
+		
+			onDeviceReady: function() {
+				angular.element(document).ready(function() {
+					angular.bootstrap(document, ["WeathApp"]);
+				});
+			},
+		};
+    
+    	pgApp.initialize();
+        */
+
+        angular.element(document).ready(function() {
+            angular.bootstrap(document, ["WeathApp"]);
+        });
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,15 @@
+<div id="main-content" ng-model="weatherData">
+    <div id="location-bar">
+        <p>Set a new Location</p>
+        <a id="back-btn" ng-click="onClickBack()" class="climacon cloud refresh icon-topbar"></a>
+    </div>
+    <div id="settings">
+        <div id="data-entry">
+            <div id="input-entry">
+                <input type="text" id="location" name="location" placeholder="" ng-model="addressData" ng-click="onClickInput()" />
+                <a id="save-btn" ng-click="onClickGo()">Go!</a>
+            </div>
+        </div>
+        <div id="map-info"></div>
+    </div>
+</div>

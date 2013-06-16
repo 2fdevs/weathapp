@@ -1,0 +1,240 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, 
+body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 14px; 
+	font-size: 1.4rem;
+	background-color: #004C66;
+}
+
+#main-content {
+	position: relative;
+	overflow: hidden;
+}
+
+#loading {
+	position: absolute;
+	width: 150px;
+	height: 100px;
+	border-radius: 4px;
+
+	background: url('../img/loader.gif') center center no-repeat rgba(30,30,30,0.5);
+	opacity: 1;
+}
+
+#home,
+#settings {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	width: 100%;
+}
+
+#weather-info,
+#data-entry {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: 50%;
+}
+
+#location-bar {
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: 50px;
+
+	background: 0 0 no-repeat rgba(10,10,10,0.3)
+}
+
+	#location-bar > p {
+		display: block;
+		position: absolute;
+		left: 20px;
+		top: 9px;
+
+		width: 90%;
+		overflow: hidden;
+
+		font-size: 20px;
+		font-size: 2rem;
+		font-weight: 300;
+		-webkit-font-smoothing: antialiased;
+		-o-transform: scale(1);
+		text-rendering: optimizeLegibility;
+	}
+
+	.icon-topbar {
+		position: absolute;
+		right: 30px;
+		top: 0;
+
+		color: #fff;
+		text-decoration: none;
+		-webkit-font-smoothing: antialiased;
+		-o-transform: scale(1);
+		text-rendering: optimizeLegibility;
+	}
+
+	#settings-btn {
+		top: -6px;
+		font-size: 48px;
+		font-size: 4.8rem;
+	}
+
+	#back-btn {
+		font-size: 36px;
+		font-size: 3.6rem;
+	}
+
+#map-info {
+	position: absolute;
+	left: 0;
+	top: 50%;
+
+	width: 100%;
+	height: 50%;
+}
+/*
+* 
+* Home Screen Styles 
+*
+*/
+#temperature {
+	z-index: 2;
+	position: absolute;
+	left: 20px;
+	bottom: 0;
+
+	font-size: 60px;
+	font-size: 6rem;
+	font-weight: 400;
+	letter-spacing: -4.5px;
+	letter-spacing: -.45rem;
+	-webkit-font-smoothing: antialiased;
+	-o-transform: scale(1);
+	text-rendering: optimizeLegibility;
+}
+
+#weather-icon {
+	z-index: 3;
+	position: absolute;
+	left: 100px;
+	bottom: 50px;
+
+	font-size: 75px;
+	font-size: 7.5rem;
+}
+
+#short-description {
+	z-index: 4;
+	position: absolute;
+	left: 110px;
+	bottom: 10px;
+
+	font-size: 24px;
+	font-size: 2.4rem;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	-o-transform: scale(1);
+	text-rendering: optimizeLegibility;
+}
+
+#weather-bg {
+	z-index: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	width: 100%;
+	height: 100%;
+}
+
+/*
+* 
+* Settings Screen Styles 
+*
+*/
+#input-entry {
+	position: absolute;
+	left: 5%;
+	top: 45%;
+
+	width: 90%;
+	height: 60px;
+}
+
+#location {
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	width: 70%;
+	height: 100%;
+	padding: 0 28% 0 4%;
+	border: 0;
+	outline: none;
+
+	color: #81A7B3;
+	font-size: 19px;
+	font-size: 1.9rem;
+	font-weight: 300;
+
+	background-color: #003547;
+}
+
+#save-btn {
+	z-index: 2;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+
+	height: 30px;
+	padding: 5px 10px;
+	border-radius: 2px;
+
+	color: #003547;
+	font-size: 18px;
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-align: center;
+	text-decoration: none;
+
+	background-color: #81A7B3;
+}
+
+#credits {
+	position: absolute;
+	left: 5%;
+	bottom: 5%;
+
+	font-size: 12px;
+	font-size: 1.2rem;
+	-webkit-font-smoothing: antialiased;
+	-o-transform: scale(1);
+	text-rendering: optimizeLegibility;
+}

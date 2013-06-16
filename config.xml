@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.twofuckingdevelopers.weathapp"
+    version   = "1.0.0">
+
+<name>WeathApp</name>
+
+<description>
+A really simple PhoneGap Build application.
+</description>
+
+<author href="https://twofuckingdevelopers.com" email="2fdevs@twofuckingdevelopers.com">
+Two Fucking Developers
+</author>
+
+<!-- for avoid Error: 'connection to server was unsuccessful to "www/assets/index.html' -->
+<preference name="load-url-timeout" value="60000" />
+
+<feature name="http://api.phonegap.com/1.0/geolocation"/>
+
+<gap:splash src="splash.png" />
+
+</widget>
